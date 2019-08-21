@@ -1,0 +1,10 @@
+alias ddown='docker-compose down'
+alias dup='docker-compose up -d'
+alias dlogs='docker-compose logs'
+alias dps='docker ps'
+
+function lazygit() {
+    git add .
+    git commit -a -m "$*"
+    git push
+}
